@@ -1,102 +1,409 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>与否清欢</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/index.css">
-    </head>
-    <body>
-        <!--导航条-->
-        <div>
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active" role="presentation">
-                    <a href="index.html">
-                        网站首页
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a href="h1.html">
-                        我的网站
-                    </a>
-                </li>
-                <li role="presentation">
-                    <a href="h2.html">
-                        关于我
-                    </a></li>
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <title>与否清欢</title>
+
+  <!--==== bootstrap ====-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--==== font-awesome ====-->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!--==== owl-carousel ====-->
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <!--==== magnific-popup ====-->
+  <link href="css/magnific-popup.css" rel="stylesheet">
+  <!--==== animate css ====-->
+  <link href="css/animate.min.css" rel="stylesheet">
+
+  <!--==== style css ====-->
+  <link href="css/style.css" rel="stylesheet">
+  <!--==== responsive css ====-->
+  <link href="css/responsive.css" rel="stylesheet">
+
+  <!--==== jquery ====-->
+  <script src="js/jquery-2.1.4.min.js"></script>
+
+  <!--[if lt IE 9]>
+<script src="js/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="js/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+  <!--==== DEMO COLOR PANEL =====-->
+  <div class="demo_panel_box">
+    <div class="color_panel_box">
+      <div class="spiner_button slide_in_out"><i class="fa fa-cog fa-spin"></i></div>
+      <span class="red_color"></span>
+      <span class="blue_color"></span>
+      <span class="yellow_color"></span>
+      <span class="purple_color"></span>
+      <span class="pink_color"></span>
+      <span class="green_color"></span>
+    </div>
+  </div>
+  <!--==== DEMO COLOR PANEL ===-->
+
+
+  <!--===== Preloader ====-->
+  <div class="preloader">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+
+
+  <!--=====****************** INTRO SECTION ****************************=====-->
+  <div id="home" class="intro-section">
+
+    <!--===== HEADER AREA =====-->
+    <header class="navbar custom-navbar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="logo">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">12</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+              <a href="#home">欢迎</a>
+              <!--== logo ==-->
+            </div>
+          </div>
+
+          <div class="col-md-9 col-sm-9 col-xs-12">
+            <nav class="main-menu">
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <!--== manin menu ==-->
+                  <li class="active smooth-scroll"><a class="theme-color" href="#home">主页</a></li>
+                  <li class="smooth-scroll"><a class="theme-color" href="#about">关于我</a></li>
+                  <li class="smooth-scroll"><a class="theme-color" href="#portfolio">工作</a></li>
+                  <li class="smooth-scroll"><a class="theme-color" href="#review">自我评价</a></li>
+                  <li class="smooth-scroll"><a class="theme-color" href="#contact">联系我</a></li>
                 </ul>
-            </div>
-            <!--导航条-->
-            <!--网站主体-->
-            <div class="login">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-3"></div>
-                        <div class="col-lg-4 col-md-4 col-sm-3">
-                            <div class="pull-left">
-                                <div class="panel panel-primary">
-                                    <div class="panel-heading">
-                                        <div class="panel-title text-center">用户登录</div>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon" >
-                                                    <i class="glyphicon glyphicon-user"></i>
-                                                </span>
-                                                <input type="text" class="form-control"  placeholder="请输入用户名">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="input-group">
-                                                <span class="input-group-addon">
-                                                    <i class="glyphicon glyphicon-lock"></i>
-                                                </span>
-                                                <input type="password" class="form-control" placeholder="请输入密码">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="panel-footer text-right">
-                                        <span class="btn btn-primary">登录</span>
-                                        <span class="btn btn-success">取消</span>
-                                        <div class="panel-footer text-right">
-                                            <span style="float: right;">
-                                                <a href="javascript:viod(0)">忘记密码?</a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-3"></div>
-                    </div>
+              </div>
+            </nav>
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+    <!--===== END HEADER AREA ======-->
+
+    <!--======= WELCOME AREA =======-->
+    <div class="welcome-area">
+      <div id="particles-js"></div>
+      <div class="welcome-table">
+        <div class="welcome-cell">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="welcome-text text-center">
+                  <h4>我是席君</h4>
+                  
                 </div>
+              </div>
+
             </div>
-            
-            <!--网站主体-->
-            <!--网站页签-->
-            <div class="bottompage">
-                <nav class="text-center">
-                    <ul class="pagination">
-                        <li class="disabled"><a href="javascript:void(0);">&lt;&lt;</a></li>
-                        <li><a href="index.html">1</a></li>
-                        <li><a href="h1.html">2</a></li>
-                        <li><a href="h2.html">3</a></li>
-                        <li class="active"><a href="h1.html">&gt;&gt;</a></li>
-                    </ul>
-                </nav>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-btn banner-icon theme-color"><i class="fa fa-angle-double-down"></i></a>
+    </div>
+    <!--===== END WELCOME AREA =====-->
+
+  </div>
+  <!--=====***************** END INTRO SECTION ***********************=====-->
+
+
+  <!--=====************** 关于我 ***************=====-->
+  <section id="about" class="about-section section-padding">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <div class="author-image wow fadeInLeft" data-wow-delay="0.4s">
+            <img src="images/author.jpg" alt="Author Image">
+            <!--=== author image ===-->
+          </div>
+        </div>
+
+        <div class="col-md-8">
+          <div class="about-text wow fadeInRight" data-wow-delay="0.4s">
+            <h3>你好，这是我</h3>
+            <p>
+              开朗活泼
+            </p>
+            <a class="btn theme-color" href="#"><i class="fa fa-download"></i> 回首页</a> <a class="scroll-btn btn extra" href="#portfolio">我的工作经历</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!--=====*********** END ABOUT SECTION **************=====-->
+
+
+  <!--======**************** SERVICES SECTION ******************=======-->
+  <section id="services" class="services-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2><span class="theme-color">我的工作经历</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="single-services text-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="servise-icon">
+              <i class="fa fa-pencil-square"></i>
             </div>
-            <!--网站页签-->
-            
-            <!--网站备案号-->
-            <div style="width:100%; text-align: center;position: fixed;bottom: 0px;padding-bottom:20px;">
-                <a href="http://www.miitbeian.gov.cn"><span>湘ICP备18000985号</span></a>
+            <h4>设计</h4>
+            <p>我的项目</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="single-services text-center wow fadeInUp" data-wow-delay="0.4s">
+            <div class="servise-icon">
+              <i class="fa fa-codepen"></i>
             </div>
-            <!--网站备案号-->
-            <script type="text/javascript" src="js/jquery.min.js"></script>
-            <script type="text/javascript" src="js/bootstrap.min."></script>
-        </body>
-    </html>
+            <h4>我的想法</h4>
+            <p>好的想法</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="single-services last-service text-center wow fadeInUp" data-wow-delay="0.6s">
+            <div class="servise-icon">
+              <i class="fa fa-laptop"></i>
+            </div>
+            <h4>发展</h4>
+            <p>关于我的发展</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--======*************** END SERVICES SECTION ****************=======-->
+
+
+  <!--QUOTES AREA-->
+  <div id="quotes" class="quotes-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="quotes-content text-center">
+            <h3>让我们一起工作</h3>
+            <p>做起来</p>
+            <a class="scroll-btn btn theme-color" href="#contact">开心</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END QUOTES AREA-->
+
+
+  <!--======********** PORTFOLIO SECTION *********======-->
+  <section id="portfolio" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2><span class="theme-color">我最近的工作</span>12444</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!--/.row-->
+    </div>
+    <!--/.container-->
+  </section>
+  <!--======************ END PORTFOLIO SECTION **************======-->
+
+
+  <!--======**************** REVIEW SECTION *****************========-->
+  <div id="review" class="review-section section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2><span class="theme-color">这是有关于我的</span> 评价</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="review-full-area">
+            <div class="review-list">
+              <div class="single-review">
+                <!-- start single carousel item -->
+                <div class="review-content">
+                  <p>开朗</p>
+                </div>
+
+              </div> <!-- end single carousel item -->
+              <div class="single-review">
+                <!-- start single carousel item -->
+                <div class="review-content">
+                  <p>活泼
+                </div>
+
+              </div> <!-- end single carousel item -->
+              <div class="single-review">
+                <!-- start single carousel item -->
+                <div class="review-content">
+                  <p>好玩</p>
+                </div>
+
+              </div> <!-- end start single carousel item -->
+              <div class="single-review">
+                <!-- start single carousel item -->
+                <div class="review-content">
+                  <p>有趣</p>
+                </div>
+
+              </div> <!-- end start single carousel item -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--======************* END REVIEW SECTION ***************========-->
+
+
+  <!--======******************** CONTACT INFO SECTION **********************======-->
+  <section id="contact" class="contact-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 wow fadeInUp" data-wow-delay="0.4s">
+          <!-- Start Contact Form -->
+          <form id="contactForm" class="contact-form shake" data-toggle="validator">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="controls">
+                    <input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="controls">
+                    <textarea id="message" rows="7" placeholder="Message" class="form-control" required data-error="Write your message"></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <button type="submit" id="submit" class="btn btn-effect theme-color"><i class="fa fa-check"></i> Send</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12">
+                <div id="msgSubmit" class="h3 text-center hidden"></div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+
+
+          </form>
+          <!-- End Contact Form -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--======**************** END CONTACT INFO SECTION ********************======-->
+
+
+  <!--======******************* FOOTER SECTION ******************======-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+          <div class="footer-text wow fadeInUp" data-wow-delay="0.4s">
+            <div style="width:100%; text-align: center;padding-bottom:20px;">
+              <a href="http://www.miitbeian.gov.cn"><span>湘ICP备18000985号</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--======******************* END FOOTER SECTION ***************======-->
+
+  <!--==== plugins js ====-->
+  <script src="js/plugins.js"></script>
+  <!--==== magnific-popup-options js ====-->
+  <script src="js/magnific-popup-options.js"></script>
+  <!--==== validator js ====-->
+  <script src="js/validator.min.js"></script>
+  <!--==== particles js ====-->
+  <script src="js/particles.min.js"></script>
+  <!--==== app js ====-->
+  <script src="js/app.js"></script>
+  <!--==== app js ====-->
+  <script src="js/wow-1.3.0.min.js"></script>
+  <!--==== main js ====-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
