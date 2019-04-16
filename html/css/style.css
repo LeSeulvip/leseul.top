@@ -908,4 +908,60 @@ textarea.form-control{
   letter-spacing: 1px;
 }
 
+.portfolio {
+  display: flex;
+}
+
+.portfolio>div:last-child {
+  flex-grow: 1;
+}
+
+.portfolio-item {
+  padding: 1rem;
+  border: 1px solid #acacac;
+  border-radius: 0.4rem;
+  text-align: left;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.portfolio-item>div {
+  position: relative;
+}
+
+.yuandian {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.shuxian {
+  width: 0px;
+  margin-left: 0.45rem;
+  border-left: 2px solid #aaa;
+  height: 11rem;
+}
+
+.div-yuandian {
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+.div-zhongjian {
+  padding: 3rem 0rem 0rem 0rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sanjiaoxing {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-top: 1px solid #444;
+  border-left: 1px solid #444;
+  transform: rotate(-45deg);
+  margin-left: -1.9rem;
+  position: absolute;
+  background-color: #fff;
+}
 
